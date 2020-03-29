@@ -23,6 +23,6 @@ jobs:
     - name: Build with Maven
       run: ./mvnw -B clean package --file pom.xml
     - name: Build docker image
-      run: docker build -t "test-app/hello-test" .
+      run: docker build -t "blueorange0312/test_app" .
     - name: Push docker image
       run: docker login -u blueorange0312 -p dfa6d212-c43d-4880-ae06-a331126cae8f; docker push blueorange0312/test_app
